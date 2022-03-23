@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>Melee_DeeptechSword</defName>
+    <label>Deeptech GreatSword</label>
+    <description>Runes are engraved on this ancient,but advanced sword. cuts through flesh and metal all the same.
+   <graphicData>
+      <texPath>Textures/Weapons</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Spacer</techLevel>
+    <costStuffCount>350</costStuffCount>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>0.25</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+      <researchPrerequisite>Fabrication</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <weaponTags>
+      <li>SpacerMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>Blader</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Sharp</li>
+        </capacities>
+        <power>45</power>
+        <cooldownTime>1.02</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>
