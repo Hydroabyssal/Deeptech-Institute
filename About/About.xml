@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Deeptech Construct</name>
+  <authors>
+    <li>Hydroabbysal</li>
+    <li>Diakon454</li>
+  </authors>
+  <supportedVersions>
+    <li>1.3</li>
+  </supportedVersions>
+  <packageId>Hydroabbysal.Deeptechconstruct</packageId>
+  <description>
+    Machine race for rimworld forerunner based with a hint of moyo
+    Packaged with weapons and armor
+  </description>
+  <modDependencies>
+    <li>
+      <packageId>erdelf.HumanoidAlienRaces</packageId>
+      <displayName>Humanoid Alien Races</displayName>
+      <downloadUrl>https://github.com/erdelf/AlienRaces/wiki</downloadUrl>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>erdelf.HumanoidAlienRaces</li>
+  </loadAfter>
+  <incompatibleWith>
+    <li>CETeam.CombatExtended</li>
+  </incompatibleWith>
+</ModMetaData>
