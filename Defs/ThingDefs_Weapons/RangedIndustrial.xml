@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- ================================= Industrial ==================================== -->
-
+  <!-- Deeptech Revolver -->
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_Revolver</defName>
-    <label>revolver bullet</label>
+    <defName>DTC_Bullet_Revolver</defName>
+    <label>deeptech revolver bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -18,16 +17,15 @@
     </projectile>
   </ThingDef>
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_Revolver</defName>
-    <label>revolver</label>
+    <defName>DTC_Gun_Revolver</defName>
+    <label>deeptech revolver(unbalanced)</label>
     <description>An ancient pattern double-action revolver. It's not very powerful, but has a decent range for a pistol and is quick on the draw.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Revolver</texPath>
+      <texPath>Things/Weapons/Ranged/Deeptech_Revolver</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
-    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
       <WorkToMake>4000</WorkToMake>
       <Mass>1.4</Mass>
@@ -37,27 +35,27 @@
       <AccuracyLong>0.35</AccuracyLong>
       <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
     </statBases>
-    <weaponTags>
-      <li>SimpleGun</li>
-      <li>Revolver</li>
-    </weaponTags>
-    <weaponClasses>
-      <li>RangedLight</li>
-    </weaponClasses>
     <costList>
-      <Steel>30</Steel>
+      <Plasteel>30</Plasteel>
+      <Uranium>1</Uranium>
+      <Steel>1</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>Fabrication</researchPrerequisite>
       <skillRequirements>
-        <Crafting>3</Crafting>
+        <Crafting>8</Crafting>
       </skillRequirements>
     </recipeMaker>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_Revolver</defaultProjectile>
+        <defaultProjectile>DTC_Bullet_Revolver</defaultProjectile>
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>Shot_Revolver</soundCast>
@@ -85,29 +83,26 @@
       </li>
     </tools>
   </ThingDef>
-
+<!-- Deeptech Pistol -->
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_Autopistol</defName>
-    <label>autopistol</label>
-    <description>An ancient pattern blowback-operated self-loading pistol. It lacks stopping power and range, but is quick to fire.</description>
+    <defName>DTC_Gun_Pistol</defName>
+    <label>deeptech pistol(unbalanced)</label>
+    <description>A Deeptech pistol.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Autopistol</texPath>
+      <texPath>Things/Weapons/Ranged/Deeptech_Pistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>Fabrication</researchPrerequisite>
       <skillRequirements>
-        <Crafting>4</Crafting>
+        <Crafting>8</Crafting>
       </skillRequirements>
     </recipeMaker>
-    <weaponTags>
-      <li>SimpleGun</li>
-    </weaponTags>
-    <weaponClasses>
-      <li>RangedLight</li>
-    </weaponClasses>
     <statBases>
       <WorkToMake>5000</WorkToMake>
       <Mass>1.2</Mass>
@@ -118,14 +113,17 @@
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>30</Steel>
+      <Plasteel>30</Plasteel>
+      <Uranium>1</Uranium>
+      <Steel>1</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_Autopistol</defaultProjectile>
+        <defaultProjectile>DTC_Bullet_Pistol</defaultProjectile>
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>Shot_Autopistol</soundCast>
@@ -154,8 +152,8 @@
     </tools>
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_Autopistol</defName>
-    <label>autopistol bullet</label>
+    <defName>DTC_Bullet_Pistol</defName>
+    <label>deeptech pistol bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>

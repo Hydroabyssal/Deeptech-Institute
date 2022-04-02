@@ -27,7 +27,10 @@
     </recipeMaker>
     <costList>
       <Plasteel>30</Plasteel>
+      <Uranium>1</Uranium>
+      <Steel>1</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <tools>
       <li>
@@ -76,8 +79,11 @@
       </li>
     </tools>
     <costList>
-      <Plasteel>50</Plasteel>
+      <Plasteel>30</Plasteel>
+      <Uranium>1</Uranium>
+      <Steel>1</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <recipeMaker>
       <recipeUsers Inherit="False">
@@ -131,8 +137,11 @@
       </li>
     </tools>
     <costList>
-      <Plasteel>80</Plasteel>
+      <Plasteel>30</Plasteel>
+      <Uranium>1</Uranium>
+      <Steel>1</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <recipeMaker>
       <recipeUsers Inherit="False">
@@ -187,8 +196,11 @@
       </li>
     </tools>
     <costList>
-      <Plasteel>15</Plasteel>
+      <Plasteel>30</Plasteel>
+      <Uranium>1</Uranium>
+      <Steel>1</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <recipeMaker>
       <recipeUsers Inherit="False">
