@@ -18,8 +18,8 @@
   </ThingDef>
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>DTC_Gun_Revolver</defName>
-    <label>deeptech revolver(unbalanced)</label>
-    <description>An ancient pattern double-action revolver. It's not very powerful, but has a decent range for a pistol and is quick on the draw.</description>
+    <label>deeptech revolver(placeholder)</label>
+    <description>placeholder.</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Deeptech_Revolver</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -86,8 +86,8 @@
 <!-- Deeptech Pistol -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>DTC_Gun_Pistol</defName>
-    <label>deeptech pistol(unbalanced)</label>
-    <description>A Deeptech pistol.</description>
+    <label>deeptech pistol(placeholder)</label>
+    <description>placeholder.</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Deeptech_Pistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -166,23 +166,22 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_MachinePistol</defName>
-    <label>machine pistol</label>
-    <description>A micro-submachine gun. It is short-ranged, but very light in the hands. Its rate of fire tends to make up for its weakness.</description>
+    <defName>DTC_Gun_MachinePistol</defName>
+    <label>deeptech PDW(placeholder)</label>
+    <description>placeholder.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/MachinePistol</texPath>
+      <texPath>Things/Weapons/Ranged/Deeptech_PDW</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_SMG</soundInteract>
-    <weaponClasses>
-      <li>RangedLight</li>
-      <li>ShortShots</li>
-    </weaponClasses>
     <recipeMaker>
-      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>Fabrication</researchPrerequisite>
       <skillRequirements>
-        <Crafting>4</Crafting>
+        <Crafting>8</Crafting>
       </skillRequirements>
     </recipeMaker>
     <statBases>
@@ -195,14 +194,17 @@
       <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>45</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <Plasteel>30</Plasteel>
+      <Uranium>1</Uranium>
+      <Steel>1</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MachinePistol</defaultProjectile>
+        <defaultProjectile>DTC_Bullet_PDW</defaultProjectile>
         <warmupTime>0.5</warmupTime>
         <range>19.9</range>
         <burstShotCount>3</burstShotCount>
@@ -232,9 +234,10 @@
       </li>
     </tools>
   </ThingDef>
+
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_MachinePistol</defName>
-    <label>machine pistol bullet</label>
+    <defName>DTC_Bullet_PDW</defName>
+    <label>deeptech PDW bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -247,518 +250,23 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_IncendiaryLauncher</defName>
-    <label>incendiary launcher</label>
-    <description>A wide-barreled incendiary bolt launcher. The bolts create small incendiary explosions on impact, starting fires.</description>
+    <defName>DTC_Gun_AssaultRifleEnergy</defName>
+    <label>deeptech assault rifle(placeholder)</label>
+    <description>placeholder.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/IncendiaryLauncher</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <soundInteract>Interact_Rifle</soundInteract>
-    <generateCommonality>0.3</generateCommonality>
-    <weaponClasses>
-      <li>RangedHeavy</li>
-    </weaponClasses>
-    <statBases>
-      <WorkToMake>20000</WorkToMake>
-      <Mass>3.4</Mass>
-      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
-    </statBases>
-    <costList>
-      <Steel>75</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
-    </costList>
-    <recipeMaker>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_IncendiaryLauncher</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
-        <range>23.9</range>
-        <forcedMissRadius>1.9</forcedMissRadius>
-        <burstShotCount>1</burstShotCount>
-        <soundCast>Shot_IncendiaryLauncher</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>14</muzzleFlashScale>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>stock</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_IncendiaryLauncher</defName>
-    <label>incendiary bolt</label>
-    <graphicData>
-      <texPath>Things/Projectile/LauncherShot</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPostLight</shaderType>
-      <color>(254,189,58)</color>
-    </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
-    <projectile>
-      <speed>40</speed>
-      <damageDef>Flame</damageDef>
-      <!-- Use default damage from explosion def -->
-      <explosionRadius>1.1</explosionRadius>
-      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
-      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
-      <ai_IsIncendiary>true</ai_IsIncendiary>
-      <arcHeightFactor>0.2</arcHeightFactor>
-      <shadowSize>0.6</shadowSize>
-    </projectile>
-  </ThingDef>
-
-  <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_SmokeLauncher</defName>
-    <label>smoke launcher</label>
-    <description>A wide-barreled smoke shell launcher. The shell will upon impact release a cloud of smoke, obscuring incoming shots and preventing turrets from locking on.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/SmokeLauncher</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <soundInteract>Interact_Rifle</soundInteract>
-    <generateCommonality>0.3</generateCommonality>
-    <weaponClasses>
-      <li>RangedHeavy</li>
-    </weaponClasses>
-    <statBases>
-      <WorkToMake>30000</WorkToMake>
-      <Mass>3.4</Mass>
-      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
-    </statBases>
-    <costList>
-      <Steel>75</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
-    </costList>
-    <weaponTags Inherit="False">
-      <li>GrenadeSmoke</li>
-    </weaponTags>
-    <recipeMaker>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_SmokeLauncher</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
-        <range>23.9</range>
-        <forcedMissRadius>1.9</forcedMissRadius>
-        <burstShotCount>1</burstShotCount>
-        <soundCast>Shot_IncendiaryLauncher</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>14</muzzleFlashScale>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>stock</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_SmokeLauncher</defName>
-    <label>smoke launcher shell</label>
-    <graphicData>
-      <texPath>Things/Projectile/LauncherShot</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPostLight</shaderType>
-      <color>(140,135,156)</color>
-    </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
-    <projectile>
-      <speed>40</speed>
-      <damageDef>Smoke</damageDef>
-      <!-- Use default damage from explosion def -->
-      <explosionRadius>2.4</explosionRadius>
-      <postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
-      <postExplosionSpawnChance>1</postExplosionSpawnChance>
-      <ai_IsIncendiary>true</ai_IsIncendiary>
-      <arcHeightFactor>0.2</arcHeightFactor>
-      <shadowSize>0.6</shadowSize>
-    </projectile>
-  </ThingDef>
-
-  <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_EmpLauncher</defName>
-    <label>EMP launcher</label>
-    <description>A wide-barreled EMP shell launcher. The shell will upon impact release a burst of electromagnetic energy, stunning mechanical targets (mechanoids, turrets, mortars) and depleting shields in the area of effect.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/EMPLauncher</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <soundInteract>Interact_Rifle</soundInteract>
-    <generateCommonality>0.3</generateCommonality>
-    <weaponClasses>
-      <li>RangedHeavy</li>
-    </weaponClasses>
-    <weaponTags>
-      <li>GrenadeEMP</li>
-    </weaponTags>
-    <statBases>
-      <WorkToMake>30000</WorkToMake>
-      <Mass>3.4</Mass>
-      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
-    </statBases>
-    <costList>
-      <Steel>75</Steel>
-      <ComponentIndustrial>8</ComponentIndustrial>
-    </costList>
-    <recipeMaker>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
-    </recipeMaker>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_EMPLauncher</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
-        <range>23.9</range>
-        <forcedMissRadius>1.9</forcedMissRadius>
-        <burstShotCount>1</burstShotCount>
-        <soundCast>Shot_IncendiaryLauncher</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>14</muzzleFlashScale>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>stock</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_EMPLauncher</defName>
-    <label>EMP launcher shell</label>
-    <graphicData>
-      <texPath>Things/Projectile/LauncherShot</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPostLight</shaderType>
-      <color>(68,150,215)</color>
-    </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
-    <projectile>
-      <speed>40</speed>
-      <damageDef>EMP</damageDef>
-      <!-- Use default damage from explosion def -->
-      <explosionRadius>1.1</explosionRadius>
-      <ai_IsIncendiary>true</ai_IsIncendiary>
-      <arcHeightFactor>0.2</arcHeightFactor>
-      <shadowSize>0.6</shadowSize>
-    </projectile>
-  </ThingDef>
-
-  <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_BoltActionRifle</defName>
-    <label>bolt-action rifle</label>
-    <description>An ancient pattern bolt-action rifle. With its long range, and low fire rate, it is unlikely to drive animals to revenge, which makes it a favorite weapon for hunting.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <soundInteract>Interact_Rifle</soundInteract>
-    <weaponClasses>
-      <li>LongShots</li>
-    </weaponClasses>
-    <statBases>
-      <WorkToMake>12000</WorkToMake>
-      <Mass>3.5</Mass>
-      <AccuracyTouch>0.65</AccuracyTouch>
-      <AccuracyShort>0.80</AccuracyShort>
-      <AccuracyMedium>0.90</AccuracyMedium>
-      <AccuracyLong>0.80</AccuracyLong>
-      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
-    </statBases>
-    <costList>
-      <Steel>60</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
-    </costList>
-    <recipeMaker>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_BoltActionRifle</defaultProjectile>
-        <warmupTime>1.7</warmupTime>
-        <range>36.9</range>
-        <soundCast>Shot_BoltActionRifle</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>stock</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_BoltActionRifle</defName>
-    <label>bolt-action rifle bullet</label>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>18</damageAmountBase>
-      <stoppingPower>1.5</stoppingPower>
-      <speed>70</speed>
-    </projectile>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_big</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-  </ThingDef>
-
-
-  <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_PumpShotgun</defName>
-    <label>pump shotgun</label>
-    <description>An ancient design of shotgun that emits a tight-packed spray of pellets. Deadly, but short range.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Shotgun</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <soundInteract>Interact_Shotgun</soundInteract>
-    <weaponClasses>
-      <li>ShortShots</li>
-    </weaponClasses>
-    <statBases>
-      <WorkToMake>12000</WorkToMake>
-      <Mass>3.4</Mass>
-      <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.87</AccuracyShort>
-      <AccuracyMedium>0.77</AccuracyMedium>
-      <AccuracyLong>0.64</AccuracyLong>
-      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
-    </statBases>
-    <costList>
-      <Steel>60</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
-    </costList>
-    <recipeMaker>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_Shotgun</defaultProjectile>
-        <warmupTime>0.9</warmupTime>
-        <range>15.9</range>
-        <soundCast>Shot_Shotgun</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>stock</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
-
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_Shotgun</defName>
-    <label>shotgun blast</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>18</damageAmountBase>
-      <stoppingPower>3</stoppingPower>
-      <armorPenetrationBase>0.14</armorPenetrationBase>
-      <speed>55</speed>
-    </projectile>
-  </ThingDef>
-
-  <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_ChainShotgun</defName>
-    <label>chain shotgun</label>
-    <description>A magazine-fed fully automatic shotgun. It is even shorter-ranged than a typical shotgun, but is extraordinarily dangerous due to burst fire.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/ChainShotgun</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <soundInteract>Interact_Shotgun</soundInteract>
-    <weaponClasses>
-      <li>ShortShots</li>
-    </weaponClasses>
-    <recipeMaker>
-      <researchPrerequisite>GasOperation</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
-    <statBases>
-      <WorkToMake>31000</WorkToMake>
-      <Mass>4.5</Mass>
-      <AccuracyTouch>0.57</AccuracyTouch>
-      <AccuracyShort>0.64</AccuracyShort>
-      <AccuracyMedium>0.55</AccuracyMedium>
-      <AccuracyLong>0.45</AccuracyLong>
-      <RangedWeapon_Cooldown>1.35</RangedWeapon_Cooldown>
-    </statBases>
-    <costList>
-      <Steel>70</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
-    </costList>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_Shotgun</defaultProjectile>
-        <warmupTime>1.2</warmupTime>
-        <range>12.9</range>
-        <burstShotCount>3</burstShotCount>
-        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-        <soundCast>Shot_Shotgun</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-    </weaponTags>
-    <tools>
-      <li>
-        <label>stock</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
-
-  <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_HeavySMG</defName>
-    <label>heavy SMG</label>
-    <description>A compact, wide-caliber slug-thrower. It's got a very short range, but it packs a punch and handles quite well.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/HeavySMG</texPath>
+      <texPath>Things/Weapons/Ranged/Deeptech_Assault</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_SMG</soundInteract>
-    <weaponClasses>
-      <li>ShortShots</li>
-      <li>RangedHeavy</li>
-    </weaponClasses>
     <recipeMaker>
-      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>Fabrication</researchPrerequisite>
       <skillRequirements>
-        <Crafting>5</Crafting>
+        <Crafting>8</Crafting>
       </skillRequirements>
     </recipeMaker>
-    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
       <WorkToMake>24000</WorkToMake>
       <Mass>3.5</Mass>
@@ -769,14 +277,17 @@
       <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>75</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
+      <Plasteel>30</Plasteel>
+      <Uranium>1</Uranium>
+      <Steel>1</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_HeavySMG</defaultProjectile>
+        <defaultProjectile>DTC_Bullet_AssaultRifleEnergy</defaultProjectile>
         <warmupTime>0.9</warmupTime>
         <range>22.9</range>
         <burstShotCount>3</burstShotCount>
@@ -786,9 +297,6 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
-    <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-    </weaponTags>
     <tools>
       <li>
         <label>grip</label>
@@ -810,8 +318,8 @@
     </tools>
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_HeavySMG</defName>
-    <label>heavy SMG bullet</label>
+    <defName>DTC_Bullet_AssaultRifleEnergy</defName>
+    <label>deeptech assault rifle blast</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -822,107 +330,25 @@
       <speed>48</speed>
     </projectile>
   </ThingDef>
-  
-  <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_LMG</defName>
-    <label>LMG</label>
-    <description>A gas-operated light machine gun. While it is somewhat unwieldy and inaccurate, its long bursts of fire are effective against groups of enemies.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/LMG</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <soundInteract>Interact_Rifle</soundInteract>
-    <weaponClasses>
-      <li>RangedHeavy</li>
-    </weaponClasses>
-    <recipeMaker>
-      <researchPrerequisite>GasOperation</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
-    <statBases>
-      <WorkToMake>34000</WorkToMake>
-      <Mass>8.5</Mass>
-      <AccuracyTouch>0.40</AccuracyTouch>
-      <AccuracyShort>0.48</AccuracyShort>
-      <AccuracyMedium>0.35</AccuracyMedium>
-      <AccuracyLong>0.26</AccuracyLong>
-      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
-    </statBases>
-    <costList>
-      <Steel>75</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
-    </costList>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_LMG</defaultProjectile>
-        <warmupTime>1.8</warmupTime>
-        <range>25.9</range>
-        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
-        <burstShotCount>6</burstShotCount>
-        <soundCast>Shot_Minigun</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-    </weaponTags>
-    <tools>
-      <li>
-        <label>stock</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_LMG</defName>
-    <label>LMG bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>11</damageAmountBase>
-      <stoppingPower>1</stoppingPower>
-      <speed>46</speed>
-    </projectile>
-  </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_AssaultRifle</defName>
-    <label>assault rifle</label>
-    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy.</description>
+    <defName>DTC_Gun_BallisticRifle</defName>
+    <label>deeptech ballistic rifle(placeholder)</label>
+    <description>placeholder.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/AssaultRifle</texPath>
+      <texPath>Things/Weapons/Ranged/Deeptech_Ball_Assault</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>Fabrication</researchPrerequisite>
       <skillRequirements>
-        <Crafting>6</Crafting>
+        <Crafting>8</Crafting>
       </skillRequirements>
     </recipeMaker>
-    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
       <WorkToMake>40000</WorkToMake>
       <Mass>3.5</Mass>
@@ -933,14 +359,17 @@
       <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>60</Steel>
-      <ComponentIndustrial>7</ComponentIndustrial>
+      <Plasteel>30</Plasteel>
+      <Uranium>1</Uranium>
+      <Steel>1</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
+        <defaultProjectile>DTC_Bullet_BallisticRifle</defaultProjectile>
         <warmupTime>1.0</warmupTime>
         <range>30.9</range>
         <burstShotCount>3</burstShotCount>
@@ -950,10 +379,6 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
-    <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-      <li>AssaultRifle</li>
-    </weaponTags>
     <tools>
       <li>
         <label>stock</label>
@@ -975,8 +400,8 @@
     </tools>
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_AssaultRifle</defName>
-    <label>assault rifle bullet</label>
+    <defName>DTC_Bullet_BallisticRifle</defName>
+    <label>deeptech ballistic rifle bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -989,25 +414,105 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_SniperRifle</defName>
-    <label>sniper rifle</label>
-    <description>An ancient design of precision sniper rifle. Bolt action. It has an exceptionally long range, great accuracy and good power. Because it's so unwieldy, other weapons outclass it at close range.</description>
+    <defName>DTC_Gun_BattleRifle</defName>
+    <label>deeptech battle rifle(placeholder)</label>
+    <description>placeholder.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/SniperRifle</texPath>
+      <texPath>Things/Weapons/Ranged/Deeptech_Battlerifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <weaponClasses>
-      <li>LongShots</li>
-      <li>RangedHeavy</li>
-    </weaponClasses>
     <recipeMaker>
-      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>Fabrication</researchPrerequisite>
       <skillRequirements>
-        <Crafting>7</Crafting>
+        <Crafting>8</Crafting>
       </skillRequirements>
     </recipeMaker>
-    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Plasteel>30</Plasteel>
+      <Uranium>1</Uranium>
+      <Steel>1</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DTC_Bullet_BattleRifle</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>DTC_Bullet_BattleRifle</defName>
+    <label>deeptech battle rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>DTC_Gun_SniperRifle</defName>
+    <label>Deeptech sniper rifle(placeholder)</label>
+    <description>placeholder.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Deeptech_Rifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>Fabrication</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
     <statBases>
       <WorkToMake>45000</WorkToMake>
       <Mass>4</Mass>
@@ -1018,14 +523,17 @@
       <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>60</Steel>
-      <ComponentIndustrial>8</ComponentIndustrial>
+      <Plasteel>30</Plasteel>
+      <Uranium>1</Uranium>
+      <Steel>1</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_SniperRifle</defaultProjectile>
+        <defaultProjectile>DTC_Bullet_SniperRifle</defaultProjectile>
         <warmupTime>3.5</warmupTime>
         <range>44.9</range>
         <soundCast>Shot_SniperRifle</soundCast>
@@ -1052,13 +560,10 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <weaponTags Inherit="False">
-      <li>SniperRifle</li>
-    </weaponTags>
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_SniperRifle</defName>
-    <label>sniper rifle bullet</label>
+    <defName>DTC_Bullet_SniperRifle</defName>
+    <label>deeptech sniper rifle bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1071,82 +576,4 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_Minigun</defName>
-    <label>minigun</label>
-    <description>A multi-barrel machine gun. It's unwieldy, but once it starts firing it fires very fast. Where most self-loading guns are powered by the energy from the gunpowder, the minigun uses an electric motor to rapidly cycle cartridges through the weapon.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <soundInteract>Interact_Rifle</soundInteract>
-    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
-    <weaponClasses>
-      <li>RangedHeavy</li>
-    </weaponClasses>
-    <statBases>
-      <WorkToMake>60000</WorkToMake>
-      <Mass>10</Mass>
-      <AccuracyTouch>0.15</AccuracyTouch>
-      <AccuracyShort>0.25</AccuracyShort>
-      <AccuracyMedium>0.25</AccuracyMedium>
-      <AccuracyLong>0.18</AccuracyLong>
-      <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
-    </statBases>
-    <costList>
-      <Steel>160</Steel>
-      <ComponentIndustrial>20</ComponentIndustrial>
-    </costList>
-    <recipeMaker>
-      <researchPrerequisite>MultibarrelWeapons</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <techLevel>Industrial</techLevel>
-    <weaponTags>
-      <li>GunHeavy</li>
-    </weaponTags>
-    <equippedStatOffsets>
-      <MoveSpeed>-0.25</MoveSpeed>
-    </equippedStatOffsets>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_Minigun</defaultProjectile>
-        <warmupTime>2.5</warmupTime>
-        <range>30.9</range>
-        <burstShotCount>25</burstShotCount>
-        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-        <soundCast>Shot_Minigun</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>barrels</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>11.7</power>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_Minigun</defName>
-    <label>minigun bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>10</damageAmountBase>
-      <speed>70</speed>
-    </projectile>
-  </ThingDef>
-  
 </Defs>
