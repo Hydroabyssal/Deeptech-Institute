@@ -16,6 +16,7 @@
       <speed>55</speed>
     </projectile>
   </ThingDef>
+
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>DTC_Gun_Revolver</defName>
     <label>deeptech revolver(placeholder)</label>
@@ -83,6 +84,7 @@
       </li>
     </tools>
   </ThingDef>
+
 <!-- Deeptech Pistol -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>DTC_Gun_Pistol</defName>
@@ -151,6 +153,7 @@
       </li>
     </tools>
   </ThingDef>
+
   <ThingDef ParentName="BaseBullet">
     <defName>DTC_Bullet_Pistol</defName>
     <label>deeptech pistol bullet</label>
@@ -165,6 +168,92 @@
     </projectile>
   </ThingDef>
 
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>DTC_Gun_Revolver</defName>
+    <label>deeptech revolver(placeholder)</label>
+    <description>placeholder.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Deeptech_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>1.4</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Plasteel>30</Plasteel>
+      <Uranium>1</Uranium>
+      <Steel>1</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>Fabrication</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DTC_Bullet_Shotgun</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+        <range>18.9</range>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>DTC_Bullet_Shotgun</defName>
+    <label>deeptech shotgun bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <!--PDW-->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>DTC_Gun_MachinePistol</defName>
     <label>deeptech PDW(placeholder)</label>
@@ -249,6 +338,7 @@
     </projectile>
   </ThingDef>
 
+  <!--Assault Rifle-->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>DTC_Gun_AssaultRifleEnergy</defName>
     <label>deeptech assault rifle(placeholder)</label>
@@ -321,7 +411,7 @@
     <defName>DTC_Bullet_AssaultRifleEnergy</defName>
     <label>deeptech assault rifle blast</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>Things/Projectile/Deeptech_EnergyBullet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -330,7 +420,7 @@
       <speed>48</speed>
     </projectile>
   </ThingDef>
-
+  <!--Ballistic Rifle-->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>DTC_Gun_BallisticRifle</defName>
     <label>deeptech ballistic rifle(placeholder)</label>
@@ -413,6 +503,7 @@
     </projectile>
   </ThingDef>
 
+  <!--Battle Rifle-->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>DTC_Gun_BattleRifle</defName>
     <label>deeptech battle rifle(placeholder)</label>
@@ -495,6 +586,7 @@
     </projectile>
   </ThingDef>
 
+  <!--Sniper Rifle-->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>DTC_Gun_SniperRifle</defName>
     <label>Deeptech sniper rifle(placeholder)</label>
