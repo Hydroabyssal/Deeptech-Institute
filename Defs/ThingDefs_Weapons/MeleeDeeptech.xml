@@ -19,7 +19,7 @@
   <!--Fist-->
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
     <defName>DTC_MeleeWeapon_Fist</defName>
-    <label>Deeptech Fist(placeholder)</label>
+    <label>deeptech Fist(placeholder)</label>
     <description>placeholder.</description>
     <graphicData>
       <texPath>Things/Weapons/Melee/Deeptech_Fist</texPath>
@@ -67,7 +67,7 @@
   <!--Machete-->
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>DTC_MeleeWeapon_Machete</defName>
-    <label>Deeptech Machete(placeholder)</label>
+    <label>deeptech Machete(placeholder)</label>
     <description>placeholder.</description>
     <graphicData>
       <texPath>Things/Weapons/Melee/Deeptech_Machete</texPath>
@@ -122,7 +122,7 @@
   <!--Sword-->
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>DTC_MeleeWeapon_Sword</defName>
-    <label>Deeptech sword(placeholder)</label>
+    <label>deeptech sword(placeholder)</label>
     <description>placeholder.</description>
     <graphicData>
       <texPath>Things/Weapons/Melee/Deeptech_Sword</texPath>
@@ -184,7 +184,7 @@
   <!--Knife-->
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>DTC_MeleeWeapon_Knife</defName>
-    <label>Deeptech knife(placeholder)</label>
+    <label>deeptech knife(placeholder)</label>
     <techLevel>Ultra</techLevel>
     <description>placeholder.</description>
     <graphicData>
@@ -243,5 +243,190 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
-  
+
+  <!--Lightblade-->
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>DTC_MeleeWeapon_Lightblade</defName>
+    <label>deeptech lightblade(placeholder)</label>
+    <description>placeholder.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/Deeptech_Lightblade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <costList>
+      <Plasteel>30</Plasteel>
+      <Uranium>1</Uranium>
+      <Steel>1</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <defaultIngredientFilter IsNull="True"/>
+      <unfinishedThingDef>DTC_UnfinishedWeaponNonStuff</unfinishedThingDef>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>Fabrication</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <!--Plasblade-->
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>DTC_MeleeWeapon_Plasblade</defName>
+    <label>deeptech plasblade(placeholder)</label>
+    <description>placeholder.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/Deeptech_Plasblade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <costList>
+      <Plasteel>30</Plasteel>
+      <Uranium>1</Uranium>
+      <Steel>1</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <defaultIngredientFilter IsNull="True"/>
+      <unfinishedThingDef>DTC_UnfinishedWeaponNonStuff</unfinishedThingDef>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>Fabrication</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <!--Quickblade-->
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>DTC_MeleeWeapon_Quickblade</defName>
+    <label>deeptech quickblade(placeholder)</label>
+    <description>placeholder.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/Deeptech_Quickblade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <costList>
+      <Plasteel>30</Plasteel>
+      <Uranium>1</Uranium>
+      <Steel>1</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <defaultIngredientFilter IsNull="True"/>
+      <unfinishedThingDef>DTC_UnfinishedWeaponNonStuff</unfinishedThingDef>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>Fabrication</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
 </Defs>
