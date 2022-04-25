@@ -1,5 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <!--Unfinished-->
+
+    <ThingDef ParentName="UnfinishedBase">
+    <defName>DTC_UnfinishedWeaponNonStuff</defName>
+    <label>unfinished weapon</label>
+    <description>An unfinished weapon.</description>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedWeapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <stuffCategories Inherit="false"/>
+  </ThingDef>
+
   <!--Fist-->
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
     <defName>DTC_MeleeWeapon_Fist</defName>
@@ -18,7 +34,7 @@
     <equippedAngleOffset>-65</equippedAngleOffset>
     <recipeMaker>
       <defaultIngredientFilter IsNull="True"/>
-      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <unfinishedThingDef>DTC_UnfinishedWeaponNonStuff</unfinishedThingDef>
       <soundWorking>Recipe_Machining</soundWorking>
       <recipeUsers Inherit="False">
         <li>FabricationBench</li>
@@ -47,6 +63,7 @@
       </li>
     </tools>
   </ThingDef>
+
   <!--Machete-->
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>DTC_MeleeWeapon_Machete</defName>
@@ -90,7 +107,7 @@
     </costList>
     <recipeMaker>
       <defaultIngredientFilter IsNull="True"/>
-      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <unfinishedThingDef>DTC_UnfinishedWeaponNonStuff</unfinishedThingDef>
       <soundWorking>Recipe_Machining</soundWorking>
       <recipeUsers Inherit="False">
         <li>FabricationBench</li>
@@ -101,6 +118,7 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
+
   <!--Sword-->
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>DTC_MeleeWeapon_Sword</defName>
@@ -151,7 +169,7 @@
     </costList>
     <recipeMaker>
       <defaultIngredientFilter IsNull="True"/>
-      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <unfinishedThingDef>DTC_UnfinishedWeaponNonStuff</unfinishedThingDef>
       <soundWorking>Recipe_Machining</soundWorking>
       <recipeUsers Inherit="False">
         <li>FabricationBench</li>
@@ -162,6 +180,7 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
+
   <!--Knife-->
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>DTC_MeleeWeapon_Knife</defName>
@@ -213,7 +232,7 @@
     </costList>
     <recipeMaker>
       <defaultIngredientFilter IsNull="True"/>
-      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <unfinishedThingDef>DTC_UnfinishedWeaponNonStuff</unfinishedThingDef>
       <soundWorking>Recipe_Machining</soundWorking>
       <recipeUsers Inherit="False">
         <li>FabricationBench</li>
