@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <AlienRace.ThingDef_AlienRace ParentName="HumanRace">
+        <defName>DTC_Alien_Construct</defName>
+        <label>Deeptech Construct</label>
+        <description>placeholder.</description>
+        <alienRace>
+            <generalSettings>
+                <maleGenderProbability>0.5</maleGenderProbability>
+                <immuneToAge>true</immuneToAge>
+                <allowHumanBios>true</allowHumanBios>
+                <minAgeForAdulthood>20</minAgeForAdulthood>
+                <humanRecipeImport>true</humanRecipeImport>
+                    <alienPartGenerator>
+                        <aliencrowntypes>
+                            <li>Average_Normal</li>
+                        </aliencrowntypes>
+                        <alienbodytypes>
+                            <li>Male</li>
+                        </alienbodytypes>
+                        <useGenderedHeads>false</useGenderedHeads>
+                        <useGenderedBodies>false</useGenderedBodies>
+                        <colorChannels>
+                            <li>
+                                <name>base</name>
+                                <first Class="ColorGenerator_Options">
+                                    <options>
+                                        <li>
+                                            <weight>1</weight>
+                                            <only>RGBA(1.000, 1.000, 1.000, 1.000)</only>
+                                        </li>
+                                    </options>
+                                </first>
+                            </li>
+                        </colorChannels>
+                    </alienPartGenerator>
+            </generalSettings>
+            <graphicPaths>
+                <li>
+                    <body>Things/Races/Construct/Body</body>
+                    <head>Things/Races/Construct/Head</head>
+                    <skeleton>Things/Races/Construct/Body</skeleton>
+                    <skull>Things/Races/Construct/Head</skull>
+                </li>
+            </graphicPaths>
+            <styleSettings>
+                <key>HairDef</key>
+                <value>
+                    <hasStyle>false</hasStyle>
+                </value>
+                <key>TattooDef</key>
+                <value>
+                    <hasStyle>false</hasStyle>
+                </value>
+                <key>BeardDef</key>
+                <value>
+                    <hasStyle>false</hasStyle>
+                </value>
+            </styleSettings>
+            <thoughtSettings>
+
+            </thoughtSettings>
+            <relationSettings>
+
+            </relationSettings>
+            <raceRestriction>
+
+            </raceRestriction>
+            <compatibility>
+                <isFlesh>false</isFlesh>
+                <isSentient>false</isSentient>
+                <hasBlood>false</hasBlood>
+            </compatibility>
+        </alienRace>
+        <statbases>
+            <ComfyTemperatureMin>-90</ComfyTemperatureMin>
+            <ToxicSensitivity>0.0</ToxicSensitivity>
+        </statbases>
+        <race>
+            <thinkTreeMain>Humanlike</thinkTreeMain>
+            <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+            <intelligence>Humanlike</intelligence>
+            <makesFootprints>true</makesFootprints>
+            <lifeExpectancy>220</lifeExpectancy>
+        </race>
+    </AlienRace.ThingDef_AlienRace>
+</Defs>
