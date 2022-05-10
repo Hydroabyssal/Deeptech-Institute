@@ -20,7 +20,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>DTC_Gun_Revolver</defName>
     <label>deeptech revolver(placeholder)</label>
-    <description>placeholder.</description>
+    <description>The RnD boys didnt want to use the plain PDWs for self defense so they made this. "Shooting In Style" They Said.</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Deeptech_Revolver</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -89,7 +89,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>DTC_Gun_Pistol</defName>
     <label>deeptech pistol(placeholder)</label>
-    <description>placeholder.</description>
+    <description>Standard Issue Pistol For Sec. Corps, effective, reliable, and easier to maintain than the other firearms produced by RnD.</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Deeptech_Pistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -342,7 +342,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>DTC_Gun_AssaultRifleEnergy</defName>
     <label>deeptech assault rifle(placeholder)</label>
-    <description>placeholder.</description>
+    <description>Energy Assault Rifle. Used by Heavy Corps in clearing out infested areas, biohazards, or mech clusters. rarely used as an Infantry Weapon.  </description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Deeptech_Assault</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -507,7 +507,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>DTC_Gun_BattleRifle</defName>
     <label>deeptech battle rifle(placeholder)</label>
-    <description>placeholder.</description>
+    <description>A Battle Rifle that came to be due to RnD thinking "we need something to counter Marksman rifles". Usually used by infantry or dedicated marksmen .</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Deeptech_Battlerifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -590,7 +590,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>DTC_Gun_SniperRifle</defName>
     <label>Deeptech sniper rifle(placeholder)</label>
-    <description>placeholder.</description>
+    <description>Heavy Caliber Sniper Rifle. Produced by RnD to Counter Megapedes, Cosmopillars, Centipedes, And anything that has heavy armor in general. Often used for Surgical Removal of Key Targets.</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Deeptech_Rifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
