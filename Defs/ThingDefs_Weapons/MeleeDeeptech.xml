@@ -20,7 +20,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
     <defName>DTC_MeleeWeapon_Fist</defName>
     <label>deeptech Fist(placeholder)</label>
-    <description>placeholder.</description>
+    <description>Used By Heavy Corps to Breach Ship Hulls, Asteroids, and Smash Heavy Armor or Chitinous Carapaces</description>
     <graphicData>
       <texPath>Things/Weapons/Melee/Deeptech_Fist</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -68,7 +68,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>DTC_MeleeWeapon_Machete</defName>
     <label>deeptech Machete(placeholder)</label>
-    <description>placeholder.</description>
+    <description>Made by RnD to answer the constant requests about clearing flora saying "Mfing LZ Clearers work soo fkin slow, id rather Clear the area myself</description>
     <graphicData>
       <texPath>Things/Weapons/Melee/Deeptech_Machete</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -123,7 +123,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>DTC_MeleeWeapon_Sword</defName>
     <label>deeptech sword(placeholder)</label>
-    <description>placeholder.</description>
+    <description>Obtained From an Abandoned Outpost/Laboratory in proximity to a giant alien structure called "The Gate". Apparently the CrackHeads decided to replicate a weapon used by the beings that once Guarded the alien structure.</description>
     <graphicData>
       <texPath>Things/Weapons/Melee/Deeptech_Sword</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -186,7 +186,7 @@
     <defName>DTC_MeleeWeapon_Knife</defName>
     <label>deeptech knife(placeholder)</label>
     <techLevel>Ultra</techLevel>
-    <description>placeholder.</description>
+    <description>Standard Issue Knife. Reliable, Cheap, And Ease of Maintenance. Used by Majority of the Institute Sec. Corps and Majority of the RnD Researchers.</description>
     <graphicData>
       <texPath>Things/Weapons/Melee/Deeptech_Knife</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -248,7 +248,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>DTC_MeleeWeapon_Lightblade</defName>
     <label>deeptech lightblade(placeholder)</label>
-    <description>placeholder.</description>
+    <description>A Hardlight Blade Formed from the desires of the Semi Insane Part of the RnD Crew. The Engineers were easily swayed to working on it, since "Damn thats cool"</description>
     <graphicData>
       <texPath>Things/Weapons/Melee/Deeptech_Lightblade</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -310,7 +310,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>DTC_MeleeWeapon_Plasblade</defName>
     <label>deeptech plasblade(placeholder)</label>
-    <description>placeholder.</description>
+    <description>The RnD Teams aswer to seeing The Empires PlasmaBlades. In exchange for a Smaller part of the blade being covered in plasma, Its Plasma is Focused Greatly in turn , thus piercing armor with more ease than most weapons.</description>
     <graphicData>
       <texPath>Things/Weapons/Melee/Deeptech_Plasblade</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -372,7 +372,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>DTC_MeleeWeapon_Quickblade</defName>
     <label>deeptech quickblade(placeholder)</label>
-    <description>placeholder.</description>
+    <description>Created to Vent out the Desires of the small fraction of the RnD Crew that watched an Excessive amount of Holo Vids Called "Anime" on repeat. This in turn made them Focused on replicating their own form of a "Katana". Specialized in Ease of Swinging, this blade is made to dice up Lightly armored Foes.</description>
     <graphicData>
       <texPath>Things/Weapons/Melee/Deeptech_Quickblade</texPath>
       <graphicClass>Graphic_Single</graphicClass>
