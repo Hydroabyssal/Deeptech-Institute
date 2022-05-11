@@ -81,7 +81,7 @@
             <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
             <intelligence>Humanlike</intelligence>
             <makesFootprints>true</makesFootprints>
-            <lifeExpectancy>220</lifeExpectancy>
+            <lifeExpectancy>22000</lifeExpectancy>
         </race>
     </AlienRace.ThingDef_AlienRace>
 </Defs>
