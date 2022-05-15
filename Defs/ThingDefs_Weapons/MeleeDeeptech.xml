@@ -25,7 +25,7 @@
       <texPath>Things/Weapons/Melee/Deeptech_fist</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <uiIconScale>1.2</uiIconScale>
+    <uiIconScale>1.4</uiIconScale>
     <techLevel>Ultra</techLevel>
     <statBases>
       <WorkToMake>6000</WorkToMake>
@@ -59,7 +59,7 @@
           <li>Blunt</li>
         </capacities>
         <power>17.7</power>
-        <cooldownTime>2</cooldownTime>
+        <cooldownTime>1.75</cooldownTime>
       </li>
     </tools>
   </ThingDef>
@@ -397,15 +397,15 @@
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>23</power>
-        <cooldownTime>2.6</cooldownTime>
+        <power>39</power>
+        <cooldownTime>1.7</cooldownTime>
       </li>
       <li>
         <label>edge</label>
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>23</power>
+        <power>13</power>
         <cooldownTime>2.6</cooldownTime>
       </li>
     </tools>
@@ -415,6 +415,129 @@
       <Steel>1</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <defaultIngredientFilter IsNull="True"/>
+      <unfinishedThingDef>DTC_UnfinishedWeaponNonStuff</unfinishedThingDef>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>Fabrication</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+    
+<!--DestroyerBlade-->
+<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>DTC_MeleeWeapon_DesBlade</defName>
+    <label>Deeptech Destroyer Blade</label>
+    <description>W.I.P</description>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/Deeptech_Destroyer_Blade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>43</power>
+        <cooldownTime>1.7</cooldownTime>
+      </li>
+    </tools>
+    <costList>
+      <Plasteel>200</Plasteel>
+      <Uranium>30</Uranium>
+      <Steel>400</Steel>
+      <ComponentIndustrial>20</ComponentIndustrial>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <defaultIngredientFilter IsNull="True"/>
+      <unfinishedThingDef>DTC_UnfinishedWeaponNonStuff</unfinishedThingDef>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>Fabrication</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+    
+    
+<!--Cleaver-->
+<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>DTC_MeleeWeapon_Cleaver</defName>
+    <label>deeptech cleaver(placeholder)</label>
+    <description>W.I.P</description>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/Deeptech_Cleaver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>33</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+    <costList>
+      <Plasteel>50</Plasteel>
+      <Uranium>10</Uranium>
+      <Steel>300</Steel>
     </costList>
     <recipeMaker>
       <defaultIngredientFilter IsNull="True"/>
