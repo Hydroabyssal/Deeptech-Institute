@@ -22,7 +22,7 @@
     <label>deeptech Fist(placeholder)</label>
     <description>Used By Heavy Corps to Breach Ship Hulls, Asteroids, and Smash Heavy Armor or Chitinous Carapaces</description>
     <graphicData>
-      <texPath>Things/Weapons/Melee/Deeptech_Fist</texPath>
+      <texPath>Things/Weapons/Melee/Deeptech_fist</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.2</uiIconScale>
@@ -125,7 +125,7 @@
     <label>deeptech sword(placeholder)</label>
     <description>Obtained From an Abandoned Outpost/Laboratory in proximity to a giant alien structure called "The Gate". Apparently the CrackHeads decided to replicate a weapon used by the beings that once Guarded the alien structure.</description>
     <graphicData>
-      <texPath>Things/Weapons/Melee/Deeptech_Sword</texPath>
+      <texPath>Things/Weapons/Melee/Deeptech_sword</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Ultra</techLevel>
