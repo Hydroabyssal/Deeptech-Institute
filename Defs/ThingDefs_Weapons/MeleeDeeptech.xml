@@ -22,10 +22,10 @@
     <label>deeptech Fist(placeholder)</label>
     <description>Used By Heavy Corps to Breach Ship Hulls, Asteroids, and Smash Heavy Armor or Chitinous Carapaces</description>
     <graphicData>
-      <texPath>Things/Weapons/Melee/Deeptech_fist</texPath>
+      <texPath>Things/Weapons/Melee/Deeptech_Fist</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <uiIconScale>1.4</uiIconScale>
+    <uiIconScale>1.5</uiIconScale>
     <techLevel>Ultra</techLevel>
     <statBases>
       <WorkToMake>6000</WorkToMake>
@@ -45,9 +45,9 @@
       </skillRequirements>
     </recipeMaker>
     <costList>
-      <Plasteel>30</Plasteel>
-      <Uranium>1</Uranium>
-      <Steel>1</Steel>
+      <Plasteel>130</Plasteel>
+      <Uranium>10</Uranium>
+      <Steel>100</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
     </costList>
