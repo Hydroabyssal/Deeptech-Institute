@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PawnKindDef Abstract ="True">
+		<defName>Modding_Tutorial_Basic_Pawnkind</defName>
+		<label>Basic Pawnkind</label>
+		<race>Race_Of_Pawn</race>
+        <!-- Is pawn a trader? If yes true, if no false -->
+		<trader>true</trader>
+        <!-- Is pawn a faction leader? If yes true, if no false -->
+		<factionLeader>false</factionLeader>
+		<backstoryFiltersOverride>
+		<li>
+			<categories>
+		  		<li>Your_Adult_Backstory_Spawn_Category</li>
+				<li>Your_Child_Backstory_Spawn_Category</li>
+			</categories>
+		</li>
+		</backstoryFiltersOverride>
+		<combatPower>45</combatPower>
+		<baseRecruitDifficulty>0.65</baseRecruitDifficulty>
+        <!-- Is pawn a fighter in combat? If yes true, if no false -->
+		<isFighter>true</isFighter>
+        <!-- Is pawn following seasons to change apparel? If yes true, if no false -->
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>Apparel_Tags_You_Want_Pawns_To_Spawn_With</li>
+		</apparelTags>
+		<weaponTags>
+      		<li>Weapon_Tags_You_Want_Pawns_To_Spawn_With</li>
+		</weaponTags>
+        <!-- Amount of money allocated for pawns to buy apparel -->
+		<apparelMoney>350~600</apparelMoney>
+        <!-- Amount of money allocated for pawns to buy weapons -->
+		<weaponMoney>500~500</weaponMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsChance>0</techHediffsChance>
+		<techHediffsMoney>
+			<min>0</min>
+			<max>0</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Tech_Hediff_Tags_You_Want_Pawns_To_Spawn_With</li>
+		</techHediffsTags>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>	
+	</PawnKindDef>
+</Defs>

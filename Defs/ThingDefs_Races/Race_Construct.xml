@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+<Defs>4
+    <AlienRace.RaceSettings Abstract = "True">
+        <defName>DTC_ConstructRaceSettings</defName>
+    </AlienRace.RaceSettings>
+
     <AlienRace.ThingDef_AlienRace ParentName="HumanRace">
         <defName>DTC_Alien_Construct</defName>
         <label>Deeptech Construct</label>
@@ -35,12 +39,12 @@
                         </colorChannels>
                     </alienPartGenerator>
             </generalSettings>
-            <graphicPaths>
+            <graphicPaths Inherit="false">
                 <li>
-                    <body>Things/Races/Construct/Body</body>
-                    <head>Things/Races/Construct/Head</head>
-                    <skeleton>Things/Races/Construct/Body</skeleton>
-                    <skull>Things/Races/Construct/Head</skull>
+                    <body>Things/Races/Construct/Body/</body>
+                    <head>Things/Races/Construct/Head/</head>
+                    <skeleton>Things/Races/Construct/Body/</skeleton>
+                    <skull>Things/Races/Construct/Head/</skull>
                 </li>
             </graphicPaths>
             <styleSettings>
@@ -60,19 +64,21 @@
             <thoughtSettings>
 
             </thoughtSettings>
-            <relationSettings>
-
-            </relationSettings>
-            <raceRestriction>
-
-            </raceRestriction>
+                <cannotReceiveThoughts>
+                    <li>Pain</li>
+                </cannotReceiveThoughts>
+            <relationSettings></relationSettings>
+            <raceRestriction></raceRestriction>
             <compatibility>
                 <isFlesh>false</isFlesh>
-                <isSentient>false</isSentient>
+                <isSentient>true</isSentient>
                 <hasBlood>false</hasBlood>
             </compatibility>
         </alienRace>
         <statbases>
+            <MarketValue>3000</MarketValue>
+            <MoveSpeed>5</MoveSpeed>
+            <ComfyTemperatureMax>26</ComfyTemperatureMax>
             <ComfyTemperatureMin>-90</ComfyTemperatureMin>
             <ToxicSensitivity>0.0</ToxicSensitivity>
         </statbases>
@@ -82,6 +88,7 @@
             <intelligence>Humanlike</intelligence>
             <makesFootprints>true</makesFootprints>
             <lifeExpectancy>22000</lifeExpectancy>
+            <nameCategory>HumanStandard</nameCategory>
         </race>
     </AlienRace.ThingDef_AlienRace>
 </Defs>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>DeeptechFaction</defName>
+    <label>Deeptech vault</label>
+    <description>palceholder.</description>
+    <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+    <pawnSingular>construct</pawnSingular>
+    <pawnsPlural>constructs</pawnsPlural>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+    </disallowedMemes>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>30</configurationListOrderPriority>
+    <backstoryFilters Inherit = "False">
+      <li>
+        <categories>
+          <li>Offworld</li>
+          <commonality>1</commonality>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <DTC_ConstructFighter>5</DTC_ConstructFighter>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <DTC_ConstructColonist>3</DTC_ConstructColonist>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <DTC_ConstructTrader>1</DTC_ConstructTrader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+          <DTC_ConstructFighter>7</DTC_ConstructFighter>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <DTC_ConstructFighter>7</DTC_ConstructFighter>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+</Defs>

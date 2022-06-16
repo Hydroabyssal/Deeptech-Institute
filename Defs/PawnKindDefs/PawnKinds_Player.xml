@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Abstract="True" Name="DeeptechBasePlayer">
+    <race>DTC_Alien_Construct</race>
+    <combatPower>45</combatPower>
+    <isFighter>true</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <initialWillRange>0~0</initialWillRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="DeeptechBasePlayer">
+    <defName>DTC_Deeptech_Member</defName>
+    <label>member</label>
+    <defaultFactionType>PlayerDeeptechFaction</defaultFactionType>
+    <apparelMoney>200~200</apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <backstoryCategories>
+      <li>Spacer</li>
+    </backstoryCategories>
+    <initialResistanceRange>9~15</initialResistanceRange>
+  </PawnKindDef>
+
+</Defs>
