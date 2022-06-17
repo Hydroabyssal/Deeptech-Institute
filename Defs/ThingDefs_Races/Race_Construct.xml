@@ -8,6 +8,7 @@
         <defName>DTC_Alien_Construct</defName>
         <label>Deeptech Construct</label>
         <description>placeholder.</description>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
         <alienRace>
             <generalSettings>
                 <maleGenderProbability>0.5</maleGenderProbability>
@@ -16,15 +17,15 @@
                 <minAgeForAdulthood>20</minAgeForAdulthood>
                 <humanRecipeImport>true</humanRecipeImport>
                     <alienPartGenerator>
-                        <aliencrowntypes>
+                        <aliencrowntypes Inherit  = "False">
                             <li>Average_Normal</li>
                         </aliencrowntypes>
-                        <alienbodytypes>
+                        <alienbodytypes Inherit  = "False">
                             <li>Male</li>
                         </alienbodytypes>
                         <useGenderedHeads>false</useGenderedHeads>
                         <useGenderedBodies>false</useGenderedBodies>
-                        <colorChannels>
+                        <colorChannels Inherit  = "False">
                             <li>
                                 <name>base</name>
                                 <first Class="ColorGenerator_Options">
