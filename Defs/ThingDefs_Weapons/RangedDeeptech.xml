@@ -169,8 +169,8 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>DTC_Gun_Revolver</defName>
-    <label>deeptech revolver(placeholder)</label>
+    <defName>DTC_Gun_Shotgun</defName>
+    <label>deeptech shotgun(placeholder)</label>
     <description>placeholder.</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Deeptech_Shotgun</texPath>
@@ -342,7 +342,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>DTC_Gun_AssaultRifleEnergy</defName>
     <label>deeptech assault rifle(placeholder)</label>
-    <description>Energy Assault Rifle. Used by Heavy Corps in clearing out infested areas, biohazards, or mech clusters. rarely used as an Infantry Weapon.  </description>
+    <description>Energy Assault Rifle. Used by Heavy Corps in clearing out infested areas, biohazards, or mech clusters. rarely used as an Infantry Weapon.</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Deeptech_Assault</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -411,7 +411,7 @@
     <defName>DTC_Bullet_AssaultRifleEnergy</defName>
     <label>deeptech assault rifle blast</label>
     <graphicData>
-      <texPath>Things/Projectile/Deeptech_EnergyBullet</texPath>
+      <texPath>Things/Weapons/Ranged/Deeptech_EnergyBullet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>

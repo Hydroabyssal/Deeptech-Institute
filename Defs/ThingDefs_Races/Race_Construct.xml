@@ -25,14 +25,14 @@
                         </alienbodytypes>
                         <useGenderedHeads>false</useGenderedHeads>
                         <useGenderedBodies>false</useGenderedBodies>
-                        <colorChannels Inherit  = "False">
+                        <colorChannels Inherit = "False">
                             <li>
-                                <name>base</name>
+                                <name>skin</name>
                                 <first Class="ColorGenerator_Options">
                                     <options>
                                         <li>
                                             <weight>1</weight>
-                                            <only>RGBA(1.000, 1.000, 1.000, 1.000)</only>
+                                            <only>(255,255,255)</only>
                                         </li>
                                     </options>
                                 </first>
@@ -49,25 +49,30 @@
                 </li>
             </graphicPaths>
             <styleSettings>
-                <key>HairDef</key>
-                <value>
-                    <hasStyle>false</hasStyle>
-                </value>
-                <key>TattooDef</key>
-                <value>
-                    <hasStyle>false</hasStyle>
-                </value>
-                <key>BeardDef</key>
-                <value>
-                    <hasStyle>false</hasStyle>
-                </value>
+                <li>
+                    <key>HairDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+                <li>
+                    <key>TattooDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                    </li>
+                <li>
+                    <key>BeardDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
             </styleSettings>
             <thoughtSettings>
-
-            </thoughtSettings>
                 <cannotReceiveThoughts>
                     <li>Pain</li>
                 </cannotReceiveThoughts>
+            </thoughtSettings>
             <relationSettings></relationSettings>
             <raceRestriction></raceRestriction>
             <compatibility>
@@ -81,7 +86,7 @@
             <MoveSpeed>5</MoveSpeed>
             <ComfyTemperatureMax>26</ComfyTemperatureMax>
             <ComfyTemperatureMin>-90</ComfyTemperatureMin>
-            <ToxicSensitivity>0.0</ToxicSensitivity>
+            <ToxicSensitivity>0</ToxicSensitivity>
         </statbases>
         <race>
             <thinkTreeMain>Humanlike</thinkTreeMain>

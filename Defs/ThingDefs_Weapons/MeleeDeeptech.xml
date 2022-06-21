@@ -125,7 +125,7 @@
     <label>deeptech sword(placeholder)</label>
     <description>Obtained From an Abandoned Outpost/Laboratory in proximity to a giant alien structure called "The Gate". Apparently the CrackHeads decided to replicate a weapon used by the beings that once Guarded the alien structure.</description>
     <graphicData>
-      <texPath>Things/Weapons/Melee/Deeptech_sword</texPath>
+      <texPath>Things/Weapons/Melee/Deeptech_Sword</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Ultra</techLevel>

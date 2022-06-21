@@ -20,8 +20,8 @@
       <li>
         <categories>
           <li>Offworld</li>
-          <commonality>1</commonality>
         </categories>
+        <commonality>1</commonality>
       </li>
     </backstoryFilters>
     <pawnGroupMakers Inherit="False">
