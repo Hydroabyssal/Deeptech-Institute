@@ -44,8 +44,8 @@
                 <li>
                     <body>Things/Races/Construct/Body/</body>
                     <head>Things/Races/Construct/Head/</head>
-                    <skeleton>Things/Races/Construct/Body/</skeleton>
-                    <skull>Things/Races/Construct/Head/</skull>
+                    <!--<skeleton>Things/Races/Construct/Body/</skeleton>
+                    <skull>Things/Races/Construct/Head/</skull>-->
                 </li>
             </graphicPaths>
             <styleSettings>
@@ -81,13 +81,13 @@
                 <hasBlood>false</hasBlood>
             </compatibility>
         </alienRace>
-        <statbases>
+        <statBases>
             <MarketValue>3000</MarketValue>
             <MoveSpeed>5</MoveSpeed>
             <ComfyTemperatureMax>26</ComfyTemperatureMax>
             <ComfyTemperatureMin>-90</ComfyTemperatureMin>
             <ToxicSensitivity>0</ToxicSensitivity>
-        </statbases>
+        </statBases>
         <race>
             <thinkTreeMain>Humanlike</thinkTreeMain>
             <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>

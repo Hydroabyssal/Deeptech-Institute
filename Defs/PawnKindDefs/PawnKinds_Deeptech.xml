@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <PawnKindDef Name="DTC_ConstructBase" Abstract="True">
+        <race>DTC_Alien_Construct</race>
+        <defaultFactionType>DeeptechFaction</defaultFactionType>
+        <initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+    </PawnKindDef>
+    <PawnKindDef ParentName="DTC_ConstructBase" Name = "ConstructStandard">
+		<defName>DTC_ConstructColonist</defName>
+		<label>Construct</label>
+        <!-- Is pawn a faction leader? If yes true, if no false-->
+		<factionLeader>false</factionLeader>
+		
+		<combatPower>45</combatPower>
+    
+	</PawnKindDef>
+	<PawnKindDef ParentName = "ConstructStandard" Name = "ConstructLeader">
+		<defName>DTC_ConstructLeader</defName>
+		<factionLeader>true</factionLeader>
+	</PawnKindDef>
+    <PawnKindDef ParentName="ConstructStandard" Name = "ConstructTrader">
+		<defName>DTC_ConstructTrader</defName>
+		<label>Construct Trader</label>
+		<trader>true</trader>
+	</PawnKindDef>
+  	<PawnKindDef ParentName="ConstructStandard" Name = "ConstructCombat">
+		<defName>DTC_ConstructFighter</defName>
+		<label>Construct Combatant</label>
+        <!-- Is pawn a faction leader? If yes true, if no false
+		<factionLeader>false</factionLeader>-->
+		<combatPower>45</combatPower>
+
+		<isFighter>true</isFighter>
+	</PawnKindDef>
+</Defs>
