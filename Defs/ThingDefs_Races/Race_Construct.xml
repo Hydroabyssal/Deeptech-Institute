@@ -74,7 +74,12 @@
                 </cannotReceiveThoughts>
             </thoughtSettings>
             <relationSettings></relationSettings>
-            <raceRestriction></raceRestriction>
+            <raceRestriction>
+                <apparelList>
+                    <li>DTC_VulcanArmor</li>
+                    <li>DTC_VulcanArmorHelmet</li>
+                </apparelList>
+            </raceRestriction>
             <compatibility>
                 <isFlesh>false</isFlesh>
                 <isSentient>true</isSentient>
