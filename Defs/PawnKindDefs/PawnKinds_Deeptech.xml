@@ -10,9 +10,6 @@
     <PawnKindDef ParentName="DTC_ConstructBase" Name = "ConstructStandard">
 		<defName>DTC_ConstructColonist</defName>
 		<label>Construct</label>
-        <!-- Is pawn a faction leader? If yes true, if no false-->
-		<factionLeader>false</factionLeader>
-		
 		<combatPower>45</combatPower>
     
 	</PawnKindDef>

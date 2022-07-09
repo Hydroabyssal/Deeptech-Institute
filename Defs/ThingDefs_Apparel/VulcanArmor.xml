@@ -85,7 +85,7 @@
         <label>vulcan helmet</label>
         <description>placeholder.</description>
         <graphicData>
-            <texPath>Things/Apparel/VulkanSet/VulkanHelm/VulkanHelm_south</texPath>
+            <texPath>Things/Apparel/VulkanSet/VulcanHelm/VulkanHelm_south</texPath>
         </graphicData>
         <costList>
             <Plasteel>30</Plasteel>

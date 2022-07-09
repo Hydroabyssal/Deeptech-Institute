@@ -4,7 +4,7 @@
   <FactionDef ParentName="OutlanderFactionBase">
     <defName>DeeptechFaction</defName>
     <label>Deeptech vault</label>
-    <description>palceholder.</description>
+    <description>placeholder.</description>
     <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
     <pawnSingular>construct</pawnSingular>
     <pawnsPlural>constructs</pawnsPlural>
@@ -16,6 +16,7 @@
     </disallowedMemes>
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>30</configurationListOrderPriority>
+    <leaderTitle>Elder</leaderTitle>
     <backstoryFilters Inherit = "False">
       <li>
         <categories>
@@ -30,12 +31,14 @@
         <commonality>100</commonality>
         <options>
           <DTC_ConstructFighter>5</DTC_ConstructFighter>
+          <DTC_ConstructLeader>1</DTC_ConstructLeader>
         </options>
       </li>
       <li>
         <kindDef>Peaceful</kindDef>
         <options>
           <DTC_ConstructColonist>3</DTC_ConstructColonist>
+          <DTC_ConstructLeader>1</DTC_ConstructLeader>
         </options>
       </li>
       <li>
