@@ -20,6 +20,12 @@
       <downloadUrl>https://github.com/erdelf/AlienRaces/wiki</downloadUrl>
       <steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
     </li>
+	<li>
+      <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+      <displayName>Vanilla Expanded Framework</displayName>
+      <downloadUrl>https://github.com/AndroidQuazar/VanillaExpandedFramework</downloadUrl>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2023507013</steamWorkshopUrl>
+    </li>
   </modDependencies>
   <loadAfter>
     <li>Ludeon.RimWorld</li>
