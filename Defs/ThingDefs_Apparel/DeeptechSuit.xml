@@ -49,11 +49,8 @@
             </bodyPartGroups>
             <wornGraphicPath>Things/Apparel/DeeptechSuit/DeeptechSuit</wornGraphicPath>
             <layers>
-                <li>Skin</li>
+                <li>OnSkin</li>
             </layers>
-            <tags>
-                <li>IndustrialAdvanced</li>
-            </tags>
             <defaultOutfitTags>
                 <li>Worker</li>
             </defaultOutfitTags>
