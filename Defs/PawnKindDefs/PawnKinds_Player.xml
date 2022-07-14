@@ -17,7 +17,7 @@
     <apparelMoney>200~200</apparelMoney>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <backstoryCategories>
-      <li>Spacer</li>
+      <li>Offworld</li>
     </backstoryCategories>
     <initialResistanceRange>9~15</initialResistanceRange>
   </PawnKindDef>

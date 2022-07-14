@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThinkTreeDef>
+		<defName>DTC_DraftableMachine</defName>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="ThinkNode_Subtree">
+					<treeDef>Downed</treeDef>
+				</li>
+				<li Class="VFEMech.ThinkNode_ConditionalHasPower">
+					<subNodes>
+						<!-- Main colonist behavior core -->
+						<li Class="ThinkNode_Priority">
+							<subNodes>
+								<li Class="ThinkNode_ConditionalOfPlayerFaction">
+									<subNodes>
+										<li Class="ThinkNode_Tagger">
+											<tagToGive>DraftedOrder</tagToGive>
+											<subNodes>
+												<li Class="JobGiver_MoveToStandable" />
+												<li Class="JobGiver_Orders" />
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+								<li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_Recharge"/>
+								<li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_ReturnToStation"/>
+								<li Class="JobGiver_Work"/>
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>Idle</tagToGive>
+									<subNodes>
+										<!-- Wander -->
+										<li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_ReturnToStationIdle"/>
+									</subNodes>
+								</li>
+
+								<li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_StandIdle"/>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+				<li Class="VFEMech.ThinkNode_ConditionalHasPower">
+					<invert>true</invert>
+					<subNodes>
+						<li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_Recharge"/>
+						<li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_ReturnToStation"/>
+					</subNodes>
+				</li>
+				<li Class="VFE.Mechanoids.AI.JobGivers.JobGiver_StandIdle"/>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+</Defs>

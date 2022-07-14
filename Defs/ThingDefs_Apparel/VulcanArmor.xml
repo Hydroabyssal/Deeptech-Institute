@@ -46,6 +46,9 @@
         </costList>
         <apparel>
             <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
         </apparel>
         <comps>
             <li Class="CompProperties_Biocodable"/>
@@ -85,7 +88,7 @@
         <label>vulcan helmet</label>
         <description>placeholder.</description>
         <graphicData>
-            <texPath>Things/Apparel/VulkanSet/VulcanHelm/VulkanHelm_south</texPath>
+            <texPath>Things/Apparel/VulkanSet/VulkanHelm/VulkanHelmet_south</texPath>
         </graphicData>
         <costList>
             <Plasteel>30</Plasteel>
@@ -103,7 +106,7 @@
             <bodyPartGroups>
                 <li>FullHead</li>
             </bodyPartGroups>
-            <wornGraphicPath>Things/Apparel/VulkanSet/VulkanHelm/VulkanHelm</wornGraphicPath>
+            <wornGraphicPath>Things/Apparel/VulkanSet/VulkanHelm/VulkanHelmet</wornGraphicPath>
             <layers>
                 <li>Overhead</li>
             </layers>
