@@ -67,7 +67,7 @@
             <body>DTC_Scarab</body>
             <baseBodySize>0.8</baseBodySize>
             <baseHealthScale>1.5</baseHealthScale>
-            <thinkTreeMain>DTC_DraftableMachine</thinkTreeMain>
+            <thinkTreeMain>VFE_Mechanoids_ViolentMachine</thinkTreeMain>
             <lifeExpectancy>2500</lifeExpectancy>
             <lifeStageAges>
                 <li>
