@@ -65,7 +65,7 @@
         <race>
             <intelligence>ToolUser</intelligence>
             <body>DTC_Scarab</body>
-            <baseBodySize>0.8</baseBodySize>
+            <baseBodySize>1.2</baseBodySize>
             <baseHealthScale>1.5</baseHealthScale>
             <thinkTreeMain>VFE_Mechanoids_ViolentMachine</thinkTreeMain>
             <lifeExpectancy>2500</lifeExpectancy>
@@ -91,7 +91,7 @@
 				<makeNonFleeingToo>true</makeNonFleeingToo>
 			</li>
 			<li Class="VFE.Mechanoids.CompProperties_Machine">
-				<hoursActive>72</hoursActive>
+				<hoursActive>150</hoursActive>
 			</li>
 		</comps>
     </ThingDef>
@@ -100,7 +100,7 @@
         <defName>DTC_Scarab</defName>
         <label>scarab</label>
         <race>DTC_Scarab</race>
-        <combatPower>50</combatPower>
+        <combatPower>9999999</combatPower>
         <lifeStages>
             <li>
                 <bodyGraphicData>
